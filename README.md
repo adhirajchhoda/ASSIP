@@ -2,104 +2,57 @@
 
 Statistical analysis of cryptocurrency exchange regulatory compliance using composite scoring methodology.
 
-## Research Methodology
+## Formula
 
-Implementation of exchange regulation formula:
 ```
 Exchange_Reg = 2.0 × Listed + License_Count + Incident_Count + Compliance_Maturity + Country_Reg - BVI
 ```
 
-## Formula Components
+## Components
 
-### Ved's Components
-- **BVI**: Binary indicator for British Virgin Islands incorporation
-- **Listed**: Binary indicator for public listing (overweighted 2.0x for transparency)
-
-### Ethan's Components  
-- **License_Count**: Count of distinct regulatory licenses/registrations
-- **Compliance_Maturity**: KYC policy strength + proof of reserves indicators
-
-### Adhiraj's Components
-- **Incident_Count**: Count of regulatory incidents/violations
-- **Country_Reg**: Country-level regulatory baseline score
+**Listed**: Binary indicator for public listing (2.0x weighted)  
+**License_Count**: Count of distinct regulatory licenses/registrations  
+**Incident_Count**: Count of regulatory incidents/violations  
+**Compliance_Maturity**: KYC policy strength + audit indicators  
+**Country_Reg**: Country-level regulatory baseline  
+**BVI**: Binary penalty for British Virgin Islands incorporation  
 
 ## Results
 
-### Dataset Statistics
-- **Total exchanges analyzed**: 251
-- **Exchange_Reg score range**: 0.0 - 40.0 (Mean: 10.07, Std: 5.47)
+**251 exchanges analyzed**  
+**Exchange_Reg range**: 0.0 - 40.0 (Mean: 10.07)
 
-### Formula Component Statistics
-| Component | Mean | Non-zero Rate |
-|-----------|------|---------------|
-| Listed | 0.15 | 14.7% |
-| License_Count | 4.14 | 96.8% |
-| Incident_Count | 1.35 | 83.7% |
-| Compliance_Maturity | 1.51 | 90.8% |
-| Country_Reg | 2.82 | 98.8% |
-| BVI | 0.03 | 3.2% |
+### Top 10 Exchanges
+1. Gate (40.0)
+2. Bitget (32.0)
+3. OKX (30.0)
+4. HashKey Exchange (28.0)
+5. Crypto.com Exchange (25.5)
+6. BitMart (22.5)
+7. KuCoin (22.0)
+8. BVOX (22.0)
+9. ByBit (21.0)
+10. Bithumb (21.0)
 
-### Top 10 Most Regulated Exchanges
-1. **Gate** (40.0)
-2. **Bitget** (32.0)
-3. **OKX** (30.0)
-4. **HashKey Exchange** (28.0)
-5. **Crypto.com Exchange** (25.5)
-6. **BitMart** (22.5)
-7. **KuCoin** (22.0)
-8. **BVOX** (22.0)
-9. **ByBit** (21.0)
-10. **Bithumb** (21.0)
-
-### Predictive Analysis
-
-Testing additional features for Exchange_Reg prediction:
-
-| Feature | Correlation | Description |
-|---------|-------------|-------------|
-| Product_Complexity | 0.303 | Weighted product offering complexity |
-| Num_Products | 0.342 | Count of distinct products |
-| Incident_Severity | 0.359 | Severity weighting of incidents |
-
-**Linear Regression Performance**: R² = 0.299 (CV: -0.137 ± 0.283)
-**Random Forest Performance**: R² = -0.020 (CV: -0.288 ± 0.278)
-
-## File Structure
-
-```
-├── analysis_core.py           # Core Exchange_Reg calculation
-├── statistical_analysis.py    # Statistical modeling framework  
-├── corrected_analysis.py      # Main analysis pipeline
-├── run_analysis.py           # Alternative execution script
-├── config.py                 # Configuration constants
-├── .gitignore               # Excludes proprietary data
-└── README.md               # This file
-```
+### Statistical Performance
+**Linear Regression R²**: 0.299  
+**Additional Features Correlation**: 0.303-0.359
 
 ## Usage
 
 ```bash
-python corrected_analysis.py
+python main.py
 ```
 
-Outputs: `cryptocurrency_exchange_regulation_analysis.csv`
+Outputs: `exchange_regulation_results.csv`
 
-## Data Sources
+## Files
 
-Analysis uses proprietary cryptocurrency exchange data (excluded from repository via .gitignore).
+- `main.py` - Main analysis pipeline
+- `exchange_analysis.py` - Exchange_Reg calculation
+- `statistical_models.py` - Predictive modeling
+- `config.py` - Configuration constants
 
-## Statistical Notes
+## Data
 
-- Formula verification: Manual calculation correlation = 1.000 (correct implementation)
-- Cross-validation shows potential overfitting due to limited sample size
-- Additional features show moderate correlation with composite regulation score
-- Listed exchanges show higher regulation scores due to 2.0x weighting
-
-## Implementation Details
-
-- BVI detection via country/region text parsing
-- Listed status extracted from governance structure descriptions  
-- License counting uses canonical mapping to avoid double-counting
-- Compliance maturity combines KYC policy analysis with audit indicators
-- Country regulation baseline calculated from exchange-level averages
-- Product complexity uses weighted scoring of derivative vs. spot offerings
+Proprietary cryptocurrency exchange data (excluded via .gitignore)
