@@ -3,7 +3,7 @@ import numpy as np
 from exchange_analysis import ExchangeAnalysis
 from statistical_models import StatisticalModels
 
-def run_analysis(data_file: str = "original_spreadsheet.csv"):
+def run_analysis(data_file: str = "../crypto_exchanges_analysis_ready.csv"):
     analyzer = ExchangeAnalysis(data_file)
     processed_df = analyzer.run_analysis()
     

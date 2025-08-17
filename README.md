@@ -100,16 +100,46 @@ Exchange_Reg = 2.0 × Listed + License_Count + Incident_Count + Compliance_Matur
 
 | Rank | Exchange | Score | Listed | Licenses | Incidents | Compliance | Country | BVI |
 |------|----------|-------|--------|----------|-----------|------------|---------|-----|
-| 1 | Gate | 40.0 | 0 | 22 | 1 | 4 | 13.0 | 0 |
-| 2 | Bitget | 32.0 | 0 | 17 | 5 | 1 | 9.0 | 0 |
-| 3 | OKX | 30.0 | 0 | 16 | 3 | 2 | 9.0 | 0 |
-| 4 | HashKey Exchange | 28.0 | 0 | 14 | 4 | 2 | 8.0 | 0 |
-| 5 | Crypto.com Exchange | 25.5 | 0 | 17 | 4 | 1 | 3.5 | 0 |
-| 6 | BitMart | 22.5 | 0 | 10 | 3 | 3 | 6.5 | 0 |
-| 7 | KuCoin | 22.0 | 0 | 11 | 4 | 1 | 6.0 | 0 |
-| 8 | BVOX | 22.0 | 0 | 11 | 2 | 3 | 7.0 | 1 |
-| 9 | ByBit | 21.0 | 0 | 7 | 6 | 3 | 5.0 | 0 |
-| 10 | Bithumb | 21.0 | 0 | 6 | 6 | 4 | 5.0 | 0 |
+| 1 | OKX | 27.8 | 0 | 4 | 1 | 1 | 21.8 | 0 |
+| 2 | Gate | 24.6 | 0 | 4 | 1 | 2 | 17.6 | 0 |
+| 2 | Crypto.com Exchange | 24.6 | 0 | 5 | 1 | 2 | 16.6 | 0 |
+| 4 | LBank | 23.0 | 0 | 3 | 1 | 3 | 17.0 | 1 |
+| 5 | Coinut | 22.4 | 0 | 4 | 1 | 4 | 13.4 | 0 |
+| 6 | Coinmetro | 22.2 | 0 | 8 | 1 | 0 | 13.2 | 0 |
+| 7 | Gemini | 20.6 | 0 | 2 | 1 | 1 | 16.6 | 0 |
+| 8 | Flipster | 19.6 | 0 | 2 | 1 | 3 | 13.6 | 0 |
+| 8 | BingX | 19.6 | 0 | 3 | 1 | 1 | 14.6 | 0 |
+| 10 | HashKey Exchange | 19.4 | 0 | 2 | 1 | 2 | 14.4 | 0 |
+
+### Bottom 25 Least Regulated Exchanges
+
+| Rank | Exchange | Score | Listed | Licenses | Incidents | Compliance | Country | BVI |
+|------|----------|-------|--------|----------|-----------|------------|---------|-----|
+| 227 | Tokocrypto | 3.0 | 0 | 0 | 1 | 2 | 0.0 | 0 |
+| 228 | Binance.US | 2.0 | 0 | 1 | 1 | 0 | 0.0 | 0 |
+| 228 | Korbit | 2.0 | 0 | 0 | 1 | 1 | 0.0 | 0 |
+| 228 | BTC-Alpha | 2.0 | 0 | 0 | 1 | 1 | 0.0 | 0 |
+| 228 | BITEXLIVE | 2.0 | 0 | 0 | 1 | 1 | 0.0 | 0 |
+| 228 | CoinCatch | 2.0 | 0 | 0 | 1 | 1 | 1.0 | 1 |
+| 228 | Niza.io | 2.0 | 0 | 1 | 1 | 0 | 0.0 | 0 |
+| 228 | Topcredit Int | 2.0 | 0 | 0 | 1 | 1 | 0.0 | 0 |
+| 228 | ZKE | 2.0 | 0 | 0 | 1 | 1 | 0.0 | 0 |
+| 228 | Cryptonex Exchange | 2.0 | 0 | 0 | 1 | 1 | 0.0 | 0 |
+| 228 | Coinbase International Exchange | 2.0 | 0 | 0 | 1 | 1 | 0.0 | 0 |
+| 228 | Dzengi.com | 2.0 | 0 | 0 | 1 | 1 | 0.0 | 0 |
+| 228 | CEEX exchange | 2.0 | 0 | 1 | 1 | 0 | 0.0 | 0 |
+| 240 | Coincheck | 1.0 | 0 | 0 | 1 | 0 | 0.0 | 0 |
+| 240 | Dex-Trade | 1.0 | 0 | 0 | 1 | 0 | 0.0 | 0 |
+| 240 | Reku | 1.0 | 0 | 0 | 1 | 0 | 0.0 | 0 |
+| 240 | BITmarkets | 1.0 | 0 | 0 | 1 | 0 | 0.0 | 0 |
+| 240 | FMCPAY | 1.0 | 0 | 0 | 1 | 0 | 0.0 | 0 |
+| 240 | digitalexchange.id | 1.0 | 0 | 0 | 1 | 0 | 0.0 | 0 |
+| 240 | Giottus | 1.0 | 0 | 0 | 1 | 0 | 0.0 | 0 |
+| 240 | Cryptonex | 1.0 | 0 | 0 | 1 | 0 | 0.0 | 0 |
+| 240 | LocalTrade | 1.0 | 0 | 0 | 1 | 0 | 0.0 | 0 |
+| 240 | Unocoin | 1.0 | 0 | 0 | 1 | 0 | 0.0 | 0 |
+| 240 | BlueBit | 1.0 | 0 | 0 | 1 | 0 | 0.0 | 0 |
+| 240 | 50x | 1.0 | 0 | 0 | 1 | 0 | 0.0 | 0 |
 
 ### Statistical Modeling Results
 
