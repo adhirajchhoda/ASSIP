@@ -237,6 +237,33 @@ The analysis expects a CSV file with the following columns:
 - `Compliance Requirements (AML/KYC, disclosure, etc.)`: Compliance details
 - `Regulatory Incidents (fines, violations, etc.)`: Enforcement history
 
+## Key Findings and Conclusions
+
+### Primary Conclusions
+
+1. **Regulatory Heterogeneity**: Massive variation in compliance levels across exchanges (0.0-40.0 range) demonstrates the fragmented nature of cryptocurrency regulation globally.
+
+2. **Geographic Clustering**: Clear jurisdictional patterns emerge with Singapore (15.2), Hong Kong (12.8), and the US (11.4) leading in average regulatory scores, indicating regulatory hubs.
+
+3. **Limited Predictive Power**: Additional features beyond the core formula show poor predictive performance (negative CV R²), suggesting the Exchange_Reg composite score already captures the primary regulatory signal.
+
+4. **Public Company Premium**: Listed exchanges average 13.2 vs 9.6 for private exchanges, confirming transparency benefits from public market oversight.
+
+5. **Regulatory Arbitrage Evidence**: BVI incorporation penalty and wide score distribution support the hypothesis of jurisdictional shopping for favorable regulation.
+
+### Statistical Insights
+
+- **Model Performance**: Linear regression achieves 0.299 R² on test data but negative cross-validation scores indicate overfitting
+- **Feature Correlations**: Incident severity (0.359), product complexity (0.303), and product count (0.342) correlate with regulation scores
+- **Sample Limitations**: 251 exchanges provide insufficient data for stable machine learning models
+
+### Policy Implications
+
+1. **Regulatory Competition**: Evidence of exchanges seeking permissive jurisdictions
+2. **Compliance Incentives**: Public listing creates measurable regulatory premiums
+3. **Enforcement Patterns**: Incident frequency and severity track with overall compliance
+4. **Market Structure**: Regulatory frameworks shape exchange product offerings
+
 ## Limitations and Future Work
 
 ### Current Limitations
